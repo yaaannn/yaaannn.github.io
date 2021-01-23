@@ -6,7 +6,7 @@
   <link href="http://yaaannn.github.io/atom.xml" rel="self"/>
   
   <link href="http://yaaannn.github.io/"/>
-  <updated>2018-01-01T04:00:00.000Z</updated>
+  <updated>2021-01-23T07:45:00.000Z</updated>
   <id>http://yaaannn.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown简明手册(持续更新)</title>
+    <link href="http://yaaannn.github.io/2021/01/23/markdown/"/>
+    <id>http://yaaannn.github.io/2021/01/23/markdown/</id>
+    <published>2021-01-23T07:49:13.427Z</published>
+    <updated>2021-01-23T07:45:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;关于-Markdown&quot;&gt;&lt;a href=&quot;#关于-Markdown&quot; class=&quot;headerlink&quot; title=&quot;关于 Markdown&quot;&gt;&lt;/a&gt;关于 Markdown&lt;/h2&gt;&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="http://yaaannn.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Markdown" scheme="http://yaaannn.github.io/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>你好</title>
