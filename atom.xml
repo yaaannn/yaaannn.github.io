@@ -6,7 +6,7 @@
   <link href="http://yaaannn.github.io/atom.xml" rel="self"/>
   
   <link href="http://yaaannn.github.io/"/>
-  <updated>2021-01-23T07:45:00.000Z</updated>
+  <updated>2021-01-24T07:45:00.000Z</updated>
   <id>http://yaaannn.github.io/</id>
   
   <author>
@@ -18,17 +18,17 @@
   
   <entry>
     <title>Markdown简明手册(持续更新)</title>
-    <link href="http://yaaannn.github.io/2021/01/23/markdown/"/>
-    <id>http://yaaannn.github.io/2021/01/23/markdown/</id>
+    <link href="http://yaaannn.github.io/2021/01/23/Markdown/"/>
+    <id>http://yaaannn.github.io/2021/01/23/Markdown/</id>
     <published>2021-01-23T07:49:13.427Z</published>
-    <updated>2021-01-23T07:45:00.000Z</updated>
+    <updated>2021-01-24T07:45:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;关于-Markdown&quot;&gt;&lt;a href=&quot;#关于-Markdown&quot; class=&quot;headerlink&quot; title=&quot;关于 Markdown&quot;&gt;&lt;/a&gt;关于 Markdown&lt;/h2&gt;&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;1-关于-Markdown&quot;&gt;&lt;a href=&quot;#1-关于-Markdown&quot; class=&quot;headerlink&quot; title=&quot;1. 关于 Markdown&quot;&gt;&lt;/a&gt;1. 关于 Markdown&lt;/h1&gt;&lt;h2 id=&quot;1-1-介绍&quot;&gt;&lt;a</summary>
         
       
     
@@ -53,7 +53,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;p&gt;$f(x_1,x_2,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2$&lt;br&gt;$$(中间写正文)$$&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot;</summary>
         
       
     
