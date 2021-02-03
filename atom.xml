@@ -6,7 +6,7 @@
   <link href="https://yaaannn.cn/atom.xml" rel="self"/>
   
   <link href="https://yaaannn.cn/"/>
-  <updated>2021-02-02T14:51:21.357Z</updated>
+  <updated>2021-02-03T05:21:53.201Z</updated>
   <id>https://yaaannn.cn/</id>
   
   <author>
@@ -17,18 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>强智教务系统API-getCurrentTime</title>
+    <link href="https://yaaannn.cn/2021/02/03/QZAPI-getCurrentTime/"/>
+    <id>https://yaaannn.cn/2021/02/03/QZAPI-getCurrentTime/</id>
+    <published>2021-02-02T16:00:00.000Z</published>
+    <updated>2021-02-03T05:21:53.201Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;getCurrentTime用来获取所提交的日期的时间、周次、学年等信息&lt;/p&gt;
+&lt;h2 id=&quot;请求&quot;&gt;&lt;a href=&quot;#请求&quot; class=&quot;headerlink&quot; title=&quot;请求&quot;&gt;&lt;/a&gt;请求&lt;/h2&gt;&lt;pre class=&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="强智教务系统API" scheme="https://yaaannn.cn/categories/%E5%BC%BA%E6%99%BA%E6%95%99%E5%8A%A1%E7%B3%BB%E7%BB%9FAPI/"/>
+    
+    
+    <category term="API" scheme="https://yaaannn.cn/tags/API/"/>
+    
+    <category term="强智" scheme="https://yaaannn.cn/tags/%E5%BC%BA%E6%99%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>强智教务系统API-authUser</title>
     <link href="https://yaaannn.cn/2021/01/29/QZAPI-authUser/"/>
     <id>https://yaaannn.cn/2021/01/29/QZAPI-authUser/</id>
     <published>2021-01-28T16:00:00.000Z</published>
-    <updated>2021-02-02T14:51:21.357Z</updated>
+    <updated>2021-02-03T05:18:26.002Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;请求&quot;&gt;&lt;a href=&quot;#请求&quot; class=&quot;headerlink&quot; title=&quot;请求&quot;&gt;&lt;/a&gt;请求&lt;/h2&gt;&lt;pre class=&quot; language-url&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;p&gt;authUser为登录方法,用于获取登录状态以及相关信息。&lt;/p&gt;
+&lt;h2 id=&quot;请求&quot;&gt;&lt;a href=&quot;#请求&quot; class=&quot;headerlink&quot; title=&quot;请求&quot;&gt;&lt;/a&gt;请求&lt;/h2&gt;&lt;pre class=&quot; language-url&quot;&gt;&lt;code</summary>
         
       
     
@@ -48,14 +77,14 @@
     <link href="https://yaaannn.cn/2021/01/28/QZAPI/"/>
     <id>https://yaaannn.cn/2021/01/28/QZAPI/</id>
     <published>2021-01-27T16:00:00.000Z</published>
-    <updated>2021-02-02T14:51:43.926Z</updated>
+    <updated>2021-02-03T05:23:32.572Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;打算写一些文章来记录一下强智教务系统的API，本人所在学校为安徽工业大学，采用湖南强智教务系统，理论上这些API与所有采用强智教务系统的学校兼容。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;打算写一些文章来记录一下强智教务系统的API，本人所在学校采用湖南强智教务系统，理论上这些API与所有采用强智教务系统的学校兼容。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a</summary>
         
