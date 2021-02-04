@@ -30,7 +30,7 @@
     <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="YAAANNN" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -425,7 +425,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    129
+                    141
                 </div>
                 
 
@@ -437,26 +437,29 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>getCurrentTime用来获取所提交的日期的时间、周次、学年等信息</p>
-<h2 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h2><pre class=" language-url"><code class="language-url">GET http://jwxt.xxxx.edu.cn/app.do?method=getCurrentTime&currDate=#查询日期</code></pre>
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><pre class=" language-json"><code class="language-json">request.header<span class="token punctuation">{</span>
-    <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">""</span> //运行身份验证authUser时获取到的token，有过期机制
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-request.data<span class="token punctuation">{</span>
-    <span class="token property">"method"</span><span class="token operator">:</span> <span class="token string">"getCurrentTime"</span><span class="token punctuation">,</span>  //必填
-    <span class="token property">"currDate"</span><span class="token operator">:</span>  <span class="token string">""</span> //格式为YYYY-MM-DD，必填，留空调用成功，但返回值均为<span class="token null">null</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
-    <span class="token property">"s_time"</span><span class="token operator">:</span> <span class="token string">"2021-04-12"</span><span class="token punctuation">,</span> //本周开始时间
-    <span class="token property">"xnxqh"</span><span class="token operator">:</span> <span class="token string">"2020-2021-2"</span><span class="token punctuation">,</span> //学年学期名称
-    <span class="token property">"zc"</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span> //当前周次
-    <span class="token property">"e_time"</span><span class="token operator">:</span> <span class="token string">"2021-04-18"</span> //本周结束时间
-<span class="token punctuation">}</span></code></pre>
+<h2 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h2><pre class="language-url" data-language="url"><code class="language-url">GET http:&#x2F;&#x2F;jwxt.xxxx.edu.cn&#x2F;app.do?method&#x3D;getCurrentTime&amp;currDate&#x3D;#查询日期</code></pre>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><pre class="language-json" data-language="json"><code class="language-json">request.header<span class="token punctuation">&#123;</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">""</span> <span class="token comment">//运行身份验证authUser时获取到的token，有过期机制</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+request.data<span class="token punctuation">&#123;</span>
+	<span class="token property">"method"</span><span class="token operator">:</span> <span class="token string">"getCurrentTime"</span><span class="token punctuation">,</span>  <span class="token comment">//必填</span>
+	<span class="token property">"currDate"</span><span class="token operator">:</span>  <span class="token string">""</span> <span class="token comment">//格式为YYYY-MM-DD，必填，留空调用成功，但返回值均为null</span>
+<span class="token punctuation">&#125;</span></code></pre>
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><pre class="language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"s_time"</span><span class="token operator">:</span> <span class="token string">"2021-04-12"</span><span class="token punctuation">,</span> <span class="token comment">//本周开始时间</span>
+    <span class="token property">"xnxqh"</span><span class="token operator">:</span> <span class="token string">"2020-2021-2"</span><span class="token punctuation">,</span> <span class="token comment">//学年学期名称</span>
+    <span class="token property">"zc"</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token comment">//当前周次</span>
+    <span class="token property">"e_time"</span><span class="token operator">:</span> <span class="token string">"2021-04-18"</span> <span class="token comment">//本周结束时间</span>
+<span class="token punctuation">&#125;</span></code></pre>
 <h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/getCurrentTime%E8%AF%B7%E6%B1%82.png" alt="getCurrentTime请求"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/getCurrentTime%E8%BF%94%E5%9B%9E%E5%80%BC.png" alt="getCurrentTime返回值"></p>
 

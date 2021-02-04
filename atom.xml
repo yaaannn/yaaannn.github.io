@@ -29,7 +29,7 @@
         
         
     <summary type="html">&lt;p&gt;getCurrentTime用来获取所提交的日期的时间、周次、学年等信息&lt;/p&gt;
-&lt;h2 id=&quot;请求&quot;&gt;&lt;a href=&quot;#请求&quot; class=&quot;headerlink&quot; title=&quot;请求&quot;&gt;&lt;/a&gt;请求&lt;/h2&gt;&lt;pre class=&quot;</summary>
+&lt;h2 id=&quot;请求&quot;&gt;&lt;a href=&quot;#请求&quot; class=&quot;headerlink&quot; title=&quot;请求&quot;&gt;&lt;/a&gt;请求&lt;/h2&gt;&lt;pre class=&quot;language-url&quot;</summary>
         
       
     
@@ -57,7 +57,7 @@
         
         
     <summary type="html">&lt;p&gt;authUser为登录方法,用于获取登录状态以及相关信息。&lt;/p&gt;
-&lt;h2 id=&quot;请求&quot;&gt;&lt;a href=&quot;#请求&quot; class=&quot;headerlink&quot; title=&quot;请求&quot;&gt;&lt;/a&gt;请求&lt;/h2&gt;&lt;pre class=&quot; language-url&quot;&gt;&lt;code</summary>
+&lt;h2 id=&quot;请求&quot;&gt;&lt;a href=&quot;#请求&quot; class=&quot;headerlink&quot; title=&quot;请求&quot;&gt;&lt;/a&gt;请求&lt;/h2&gt;&lt;pre class=&quot;language-url&quot;</summary>
         
       
     

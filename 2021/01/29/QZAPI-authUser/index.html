@@ -30,7 +30,7 @@
     <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="YAAANNN" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -425,7 +425,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    137
+                    153
                 </div>
                 
 
@@ -437,39 +437,43 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>authUser为登录方法,用于获取登录状态以及相关信息。</p>
-<h2 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h2><pre class=" language-url"><code class="language-url">GET　http://jwxt.ahut.edu.cn/app.do?method=authUser&xh=#学号&pwd=#密码</code></pre>
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
-    <span class="token property">"method"</span><span class="token operator">:</span> <span class="token string">"authUser"</span><span class="token punctuation">,</span>  //必填
-    <span class="token property">"xh"</span><span class="token operator">:</span> <span class="token string">"登陆教务系统使用的学号"</span><span class="token punctuation">,</span>  //必填
-    <span class="token property">"pwd"</span><span class="token operator">:</span> <span class="token string">"登陆教务系统需要的密码"</span>  //必填
-<span class="token punctuation">}</span></code></pre>
-<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><h3 id="登录成功"><a href="#登录成功" class="headerlink" title="登录成功"></a>登录成功</h3><pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
+<h2 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h2><pre class="language-url" data-language="url"><code class="language-url">GET　http:&#x2F;&#x2F;jwxt.ahut.edu.cn&#x2F;app.do?method&#x3D;authUser&amp;xh&#x3D;#学号&amp;pwd&#x3D;#密码</code></pre>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><pre class="language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+	<span class="token property">"method"</span><span class="token operator">:</span> <span class="token string">"authUser"</span><span class="token punctuation">,</span>  <span class="token comment">//必填</span>
+	<span class="token property">"xh"</span><span class="token operator">:</span> <span class="token string">"登陆教务系统使用的学号"</span><span class="token punctuation">,</span>  <span class="token comment">//必填</span>
+	<span class="token property">"pwd"</span><span class="token operator">:</span> <span class="token string">"登陆教务系统需要的密码"</span>  <span class="token comment">//必填</span>
+<span class="token punctuation">&#125;</span></code></pre>
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><h3 id="登录成功"><a href="#登录成功" class="headerlink" title="登录成功"></a>登录成功</h3><pre class="language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
     <span class="token property">"success"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>    //令牌
-    <span class="token property">"user"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token property">"userdwmc"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> //所在学院
-        <span class="token property">"scsj"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
-        <span class="token property">"sjyzm"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
-        <span class="token property">"usertype"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> //学生类型
-        <span class="token property">"useraccount"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  //用户账户
-        <span class="token property">"userpasswd"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>   //用户密码
-        <span class="token property">"username"</span><span class="token operator">:</span> <span class="token string">""</span>  //用户名
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>    <span class="token comment">//令牌</span>
+    <span class="token property">"user"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"userdwmc"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token comment">//所在学院</span>
+        <span class="token property">"scsj"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+        <span class="token property">"sjyzm"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+        <span class="token property">"usertype"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token comment">//学生类型</span>
+        <span class="token property">"useraccount"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token comment">//用户账户</span>
+        <span class="token property">"userpasswd"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>   <span class="token comment">//用户密码</span>
+        <span class="token property">"username"</span><span class="token operator">:</span> <span class="token string">""</span>  <span class="token comment">//用户名</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
     <span class="token property">"usertype"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
-    <span class="token property">"userrealname"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> //学生真实姓名
+    <span class="token property">"userrealname"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token comment">//学生真实姓名</span>
     <span class="token property">"userdwmc"</span><span class="token operator">:</span> <span class="token string">""</span>
-<span class="token punctuation">}</span></code></pre>
-<h3 id="登录失败"><a href="#登录失败" class="headerlink" title="登录失败"></a>登录失败</h3><pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
+<span class="token punctuation">&#125;</span></code></pre>
+<h3 id="登录失败"><a href="#登录失败" class="headerlink" title="登录失败"></a>登录失败</h3><pre class="language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
     <span class="token property">"success"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
     <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"-1"</span><span class="token punctuation">,</span>
     <span class="token property">"msg"</span><span class="token operator">:</span> <span class="token string">"密码错误"</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">&#125;</span></code></pre>
+
 <h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><p><img src="https://i.loli.net/2021/01/29/xvjsIThU3zHnD8P.png" alt="请求"></p>
 <p><img src="https://i.loli.net/2021/01/29/IWtBs5RPz7noXOw.png" alt="返回值"></p>
 
