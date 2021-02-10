@@ -6,7 +6,7 @@
   <link href="https://yaaannn.cn/atom.xml" rel="self"/>
   
   <link href="https://yaaannn.cn/"/>
-  <updated>2021-02-07T12:26:50.226Z</updated>
+  <updated>2021-02-10T13:11:52.059Z</updated>
   <id>https://yaaannn.cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VS Code配置SSH</title>
+    <link href="https://yaaannn.cn/2021/02/10/VSCode-SSH/"/>
+    <id>https://yaaannn.cn/2021/02/10/VSCode-SSH/</id>
+    <published>2021-02-09T16:00:00.000Z</published>
+    <updated>2021-02-10T13:11:52.059Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近在Vultr买了几台服务器用来赚钱，服务器是CentOS 7，由于是服务器，所以需要用到ssh工具来连接服务器，之前一直用的是Xshell，但是秉承着从简的原则，我开始物色其它SSH工具，正好看到了桌面上的VS Code，于是就有了这篇文章。&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="VS Code" scheme="https://yaaannn.cn/categories/VS-Code/"/>
+    
+    
+    <category term="SSH" scheme="https://yaaannn.cn/tags/SSH/"/>
+    
+    <category term="环境搭建" scheme="https://yaaannn.cn/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="VS Code" scheme="https://yaaannn.cn/tags/VS-Code/"/>
+    
+  </entry>
   
   <entry>
     <title>Flutter开发环境搭建</title>
@@ -37,11 +67,11 @@
     <category term="Flutter" scheme="https://yaaannn.cn/categories/Flutter/"/>
     
     
-    <category term="Flutter" scheme="https://yaaannn.cn/tags/Flutter/"/>
-    
     <category term="环境搭建" scheme="https://yaaannn.cn/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     <category term="VS Code" scheme="https://yaaannn.cn/tags/VS-Code/"/>
+    
+    <category term="Flutter" scheme="https://yaaannn.cn/tags/Flutter/"/>
     
   </entry>
   
