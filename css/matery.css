@@ -4,6 +4,9 @@
     .container {
         width: 95%;
     }
+    header .brand-logo .logo-img{
+        display: none;
+    }
 }
 
 /*中等屏幕下(平板类)的样式*/
@@ -241,7 +244,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #00AA90 0%, #00AA90 100%);
 }
 
 .text-color {
@@ -257,7 +260,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #00AA90 0%, #00AA90 100%);
     opacity: 0.8;
 }
 
