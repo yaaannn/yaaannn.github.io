@@ -25,17 +25,17 @@
 </script>
 
     <title>留言 | YAAANNN</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="YAAANNN" type="application/atom+xml">
 </head>
@@ -44,13 +44,27 @@
 
 
 <body>
+
+    <!-- <script> 
+    if (localStorage.getItem('dark') === '1') { 
+        document.body.classList.add('dark'); 
+    } else if (new Date().getHours() >= 22 || new Date().getHours() < 7) { 
+        document.body.classList.add('dark'); 
+    } else if (matchMedia('(prefers-color-scheme: dark)').matches) { 
+        document.body.classList.add('dark'); 
+    } 
+    </script> 
+    <a onclick="switchNightMode()" id="sma"> 
+        <i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i> 
+    </a> -->
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">YAAANNN</span>
                 </a>
@@ -170,7 +184,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">YAAANNN</div>
         <div class="logo-desc">
@@ -329,7 +343,7 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/medias/banner/0.png)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.png)');
 </script>
 
 
@@ -344,6 +358,120 @@
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
                 </div>
                 <h1 id="欢迎前来留言"><a href="#欢迎前来留言" class="headerlink" title="欢迎前来留言"></a><center>欢迎前来留言</center></h1>
+                <style>
+    /* 增加每日一言模块 */
+    .poem-wrap {
+        position: relative;
+        width: 730px;
+        max-width: 80%;
+        border: 2px solid #797979;
+        border-top: 0;
+        text-align: center;
+        margin: 80px auto;
+    }
+
+    .poem-left {
+        left: 0;
+    }
+
+    .poem-border {
+        position: absolute;
+        height: 2px;
+        width:
+            27%;
+        background-color: #797979;
+    }
+
+    .poem-right {
+        right: 0;
+    }
+
+    .poem-wrap h1 {
+        position: relative;
+        margin-top: -20px;
+        display: inline-block;
+        letter-spacing: 4px;
+        color: #797979;
+    }
+
+    .poem-wrap p:nth-of-type(1) {
+        font-size: 25px;
+        text-align:
+            center;
+        margin: 0 auto;
+    }
+
+    .poem-wrap p {
+        width: 70%;
+        margin: auto;
+        line-height: 30px;
+        color: #797979;
+        font-family:
+            "Linux Biolinum", "Noto Serif SC", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+    }
+
+    .poem-wrap p:nth-of-type(2) {
+        font-size: 18px;
+        margin: 15px auto;
+    }
+
+    .bozhushuo {
+        text-align: center;
+        font-size: 19px !important;
+        margin: 0 0 12px !important;
+        line-height: 1.9rem;
+        font-family: "Linux Biolinum", "Noto Serif SC", Helvetica, Arial, Menlo, Monaco,
+            monospace, sans-serif;
+    }
+
+    .notice {
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 95%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+</style>
+
+<script>
+
+    $.get("https://v1.hitokoto.cn?c=d&c=h&c=j", function (data, status) { 
+        if (status == 'success') { 
+            $('#poem').html(data.hitokoto); 
+        if (data.from_who != null) { 
+            $('#info').html(data.from_who + " · " + "《 " + data.from + " 》"); 
+        } 
+        else { 
+            $('#info').html(" “ " + data.from + " ” "); 
+        } 
+    } 
+        else { 
+            $('#poem').html("获取出错啦"); 
+        } 
+    }
+    );
+
+</script>
+
+<!-- 加入网易云音乐热门评论，实时更新 -->
+<div class="poem-wrap">
+    <div class="poem-border poem-left"> </div>
+    <div class="poem-border poem-right"> </div>
+    <h1>热评</h1>
+    <p id="poem">loading...</p>
+    <p id="info">loading...</p>
+</div>
+
             </div>
         </div>
         <div class="card">
@@ -605,8 +733,8 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/valine/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/valine/Valine.min.js"></script>
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
 <script>
     new Valine({
         el: '#vcomments',
@@ -885,12 +1013,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -912,7 +1040,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -927,7 +1055,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

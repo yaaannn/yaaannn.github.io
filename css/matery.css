@@ -4,6 +4,7 @@
     .container {
         width: 95%;
     }
+    /* 关闭首页logo */
     header .brand-logo .logo-img{
         display: none;
     }
@@ -14,10 +15,16 @@
     .container {
         width: 90%;
     }
+    header .brand-logo .logo-img{
+        display: none;
+    }
 }
 
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
+    header .brand-logo .logo-img{
+        display: none;
+    }
     .container {
         width: 90%;
         max-width: 1125px;
@@ -370,6 +377,7 @@ header .side-nav .social-link {
     padding: 0 12px;
 }
 
+/* 首页按钮 */
 .cover-btns {
     position: relative;
     top: 10vh;
@@ -383,7 +391,7 @@ header .side-nav .social-link {
     line-height: 45px;
     font-size: 1rem;
     color: #fff;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff;  */
     background-color: transparent;
     border-radius: 30px;
     box-shadow: none;
@@ -550,7 +558,7 @@ header .go-back i {
 }
 
 .post-cover {
-    height: 40vh !important;
+    height: 75vh !important;
 }
 
 .bg-cover:after {
@@ -710,9 +718,11 @@ header .go-back i {
     font-weight: 700;
 }
 
+.notice .text,
 .dream .text {
     opacity: .6;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-family: 'Architects Daughter', cursive !important;
 }
 
 .music-player,
@@ -760,12 +770,12 @@ header .go-back i {
 }
 
 .recommend .title {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 
 .recommend .post-card:before {
@@ -1906,7 +1916,7 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: linear-gradient(to bottom right, #00AA90 0%, #00AA90 100%);
     width: 48px;
     height: 48px;
 }
