@@ -40,6 +40,11 @@
         width: 90%;
         margin: 0 auto;
         max-width: 1250px;
+    } 
+    
+    .ziwojieshao {
+        padding: 0 118px;
+        font-family: 'Architects Daughter', cursive !important;
     }
 }
 
