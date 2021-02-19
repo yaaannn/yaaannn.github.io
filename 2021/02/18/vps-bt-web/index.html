@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="VS Code配置SSH, YAAANNN">
+    <meta name="keywords" content="Typecho安装指南, YAAANNN">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -24,7 +24,7 @@
     gtag('config', 'G-7W1JYM4NHC');
 </script>
 
-    <title>VS Code配置SSH | YAAANNN</title>
+    <title>Typecho安装指南 | YAAANNN</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219165241.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">VS Code配置SSH</h1>
+                    <h1 class="description center-align post-title">Typecho安装指南</h1>
                 </div>
             </div>
         </div>
@@ -438,12 +438,20 @@
                                 <span class="chip bg-color">SSH</span>
                             </a>
                         
-                            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-                                <span class="chip bg-color">环境搭建</span>
-                            </a>
-                        
                             <a href="/tags/VS-Code/">
                                 <span class="chip bg-color">VS Code</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
+                            </a>
+                        
+                            <a href="/tags/VPS/">
+                                <span class="chip bg-color">VPS</span>
+                            </a>
+                        
+                            <a href="/tags/Typecho/">
+                                <span class="chip bg-color">Typecho</span>
                             </a>
                         
                     </div>
@@ -454,8 +462,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/VS-Code/" class="post-category">
-                                VS Code
+                            <a href="/categories/%E5%85%B6%E5%AE%83/" class="post-category">
+                                其它
                             </a>
                         
                     </div>
@@ -467,21 +475,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-10
+                    2021-02-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-02-18
+                    2021-02-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    477
+                    431
                 </div>
                 
 
@@ -501,34 +509,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>最近在Vultr买了几台服务器用来赚钱，服务器是CentOS 7，由于是服务器，所以需要用到ssh工具来连接服务器，之前一直用的是Xshell，但是秉承着从简的原则，我开始物色其它SSH工具，正好看到了桌面上的VS Code，于是就有了这篇文章。</p>
-<h1 id="1-系统配置"><a href="#1-系统配置" class="headerlink" title="1.系统配置"></a>1.系统配置</h1><p>首先安装SSH工具，如果没有，请先安装。安装后，可以在命令行工具输入<code>SSH</code>来检验是否正确安装，出现以下结果则正确安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/ssh.png"></p>
-<p>之后使用命令配置证书</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash">ssh-keygen -t rsa -C <span class="token string">"xxxxxxxxx@xxx.xxx"</span></code></pre>
-<p>配置成功后会在<code>C:\Users\xxx\.ssh</code>文件夹中出现下面两个文件</p>
+                <p>之前在别人的虚拟主机上体验过Typecho博客，现在有了自己的VPS，于是便想试试在自己的VPS上安装Typecho。</p>
+<p>本文就介绍下如何在自己的 VPS 上搭建 Typecho 博客。</p>
+<h1 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h1><p>首先需要一台VPS，并且有一个解析到服务器IP的域名。</p>
+<p>访问<a target="_blank" rel="noopener" href="http://typecho.org/">Typecho官网</a>，在首页下载安装包，建议下载正式版。</p>
+<p>使用SSH工具连接到VPS，不会连接的可以参考我之前的一篇文章<a href="https://yaaannn.cn/2021/02/10/VSCode-SSH/">VS Code配置SSH</a></p>
+<h1 id="2-安装宝塔面板"><a href="#2-安装宝塔面板" class="headerlink" title="2.安装宝塔面板"></a>2.安装宝塔面板</h1><p>在终端输入</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">yum <span class="token function">install</span> -y <span class="token function">wget</span> <span class="token operator">&amp;&amp;</span> <span class="token function">wget</span> -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="token operator">&amp;&amp;</span> <span class="token function">sh</span> install.sh</code></pre>
+<p>安装完成后终端会输出相关信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219153116.png"></p>
+<p>接着在浏览器登入宝塔面板，刚进入选择安装<code>LNMP</code>，<strong>PHP版本建议选择7.8</strong>，安装完成后就可以使用宝塔后台了。</p>
+<h1 id="3-部署网站"><a href="#3-部署网站" class="headerlink" title="3.部署网站"></a>3.部署网站</h1><p>添加网站，并同时新建数据库。<strong>记录下数据库用户名和密码</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219153634.png"></p>
+<p>然后进入网站根目录，将其中的文件全部删除</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219153717.png"></p>
+<p>上传之前下载的Typecho安装包，并且解压到根目录，解压后会出现bulid目录，把build文件夹中的文件全部复制到文件夹中，然后删除 build 文件夹和Typecho安装包。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219153931.png"></p>
+<p>最后应该是这个样子</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219154016.png"></p>
+<h1 id="4-安装Typecho"><a href="#4-安装Typecho" class="headerlink" title="4.安装Typecho"></a>4.安装Typecho</h1><p>浏览器输入你的域名，会进入Typecho安装页面，如下图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219154144.png"></p>
+<p>正确配置好之后即可使用Typecho博客</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219154218.png"></p>
+<p>至此，Typecho博客安装完毕</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219154248.png"></p>
 <blockquote>
-<p>id_rsa</p>
-<p>id_rsa.pub</p>
+<p><strong>Typecho很香，但我还是选择Hexo，毕竟不需要额外的费用啊</strong></p>
 </blockquote>
-<h1 id="2-VS-Code配置SSH并连接"><a href="#2-VS-Code配置SSH并连接" class="headerlink" title="2.VS Code配置SSH并连接"></a>2.VS Code配置SSH并连接</h1><p>首先在VS Code官方插件市场安装Remote-SSH扩展</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/ssh1.png"></p>
-<p>安装成功之后可以点击左下角或者侧边栏里的远程资源管理器</p>
-<p>接着选择<code>Remote-SSH: Connect to Host...</code>，然后选择<code>Add New Host</code>，在弹出来的窗口输入<code>ssh 服务器用户名@服务器地址</code>之后回车</p>
-<p>选择ssh配置文件地址，我们选择第一步中的路径（为我们配置免密登录做准备)，然后输入服务器密码回车即可成功连接服务器</p>
-<p>放一张我成功连接图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/ssh2.png"></p>
-<h1 id="3-配置免密登录"><a href="#3-配置免密登录" class="headerlink" title="3.配置免密登录"></a>3.配置免密登录</h1><p>在服务器的当前用户目录下创建文件夹<code>.ssh</code>同时在改目录下新建文件<code>authorized_keys</code></p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> .ssh
-<span class="token builtin class-name">cd</span> .ssh
-<span class="token function">touch</span> authorized_keys</code></pre>
-<p>创建好文件之后先使用记事本类软件打开第一步中生成的<code>id_rsa.pub</code>文件然后复制其中内容</p>
-<p>之后使用你熟悉的文本编辑器打开创建的文件</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">vim</span> authorized_keys</code></pre>
-<p>将复制的内容粘贴进去</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/vim.png"></p>
-<p>保存，退出，重新连接SSH会发现不需要密码了</p>
-<p>至此，VS Code配置SSH完成</p>
+<blockquote>
+<p><strong>另外，海外服务器滞销，可以用来搭??，快来帮帮孩子吧，QQ：1460185042</strong></p>
+</blockquote>
 
                 
             </div>
@@ -555,7 +565,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yaaannn.cn/2021/02/10/VSCode-SSH/">https://yaaannn.cn/2021/02/10/VSCode-SSH/</a>
+                    <a href="https://yaaannn.cn/2021/02/18/vps-bt-web/">https://yaaannn.cn/2021/02/18/vps-bt-web/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -597,12 +607,20 @@
                                     <span class="chip bg-color">SSH</span>
                                 </a>
                             
-                                <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-                                    <span class="chip bg-color">环境搭建</span>
-                                </a>
-                            
                                 <a href="/tags/VS-Code/">
                                     <span class="chip bg-color">VS Code</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
+                                </a>
+                            
+                                <a href="/tags/VPS/">
+                                    <span class="chip bg-color">VPS</span>
+                                </a>
+                            
+                                <a href="/tags/Typecho/">
+                                    <span class="chip bg-color">Typecho</span>
                                 </a>
                             
                         </div>
@@ -1041,49 +1059,63 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/13/QZAPI-getKbcxAzc/">
+                <a href="/2021/02/18/vps-bt-web/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/QZAPI-getKbcxAzc.png" class="responsive-img" alt="强智教务系统API-getKbcxAzc">
+                        <img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/20210219165241.png" class="responsive-img" alt="Typecho安装指南">
                         
-                        <span class="card-title">强智教务系统API-getKbcxAzc</span>
+                        <span class="card-title">Typecho安装指南</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            getKbcxAzc用于获取一周的课程信息。
+                            Typecho具有轻量高效，先进稳定，简洁友好的特点，本文主要介绍在自己的服务器上部署Typecho。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BC%BA%E6%99%BA%E6%95%99%E5%8A%A1%E7%B3%BB%E7%BB%9FAPI/" class="post-category">
-                                    强智教务系统API
+                            <a href="/categories/%E5%85%B6%E5%AE%83/" class="post-category">
+                                    其它
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/API/">
-                        <span class="chip bg-color">API</span>
+                    <a href="/tags/SSH/">
+                        <span class="chip bg-color">SSH</span>
                     </a>
                     
-                    <a href="/tags/%E5%BC%BA%E6%99%BA/">
-                        <span class="chip bg-color">强智</span>
+                    <a href="/tags/VS-Code/">
+                        <span class="chip bg-color">VS Code</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                    <a href="/tags/VPS/">
+                        <span class="chip bg-color">VPS</span>
+                    </a>
+                    
+                    <a href="/tags/Typecho/">
+                        <span class="chip bg-color">Typecho</span>
                     </a>
                     
                 </div>
@@ -1097,31 +1129,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/07/flutter-config/">
+                <a href="/2021/02/16/vim-plug/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/yaaannn/blog_img/2021-02-18%20225714.png" class="responsive-img" alt="Vim使用手册之插件安装">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/yaaannn/yaaannn.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="Flutter开发环境搭建">
-                        
-                        <span class="card-title">Flutter开发环境搭建</span>
+                        <span class="card-title">Vim使用手册之插件安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。本文主要介绍Flutter开发环境搭建。
+                            写这篇文章主要是怕自己忘记如何安装Vim插件，算是写给自己看的，同时也可以加强印象。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Flutter/" class="post-category">
-                                    Flutter
+                            <a href="/categories/Vim%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/" class="post-category">
+                                    Vim使用手册
                                 </a>
                             
                             
@@ -1131,16 +1162,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">环境搭建</span>
+                    <a href="/tags/%E6%8F%92%E4%BB%B6/">
+                        <span class="chip bg-color">插件</span>
                     </a>
                     
-                    <a href="/tags/VS-Code/">
-                        <span class="chip bg-color">VS Code</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
-                    <a href="/tags/Flutter/">
-                        <span class="chip bg-color">Flutter</span>
+                    <a href="/tags/Vim/">
+                        <span class="chip bg-color">Vim</span>
                     </a>
                     
                 </div>

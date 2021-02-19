@@ -6,7 +6,7 @@
   <link href="https://yaaannn.cn/atom.xml" rel="self"/>
   
   <link href="https://yaaannn.cn/"/>
-  <updated>2021-02-18T15:17:44.808Z</updated>
+  <updated>2021-02-19T08:58:27.836Z</updated>
   <id>https://yaaannn.cn/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typecho安装指南</title>
+    <link href="https://yaaannn.cn/2021/02/18/vps-bt-web/"/>
+    <id>https://yaaannn.cn/2021/02/18/vps-bt-web/</id>
+    <published>2021-02-17T16:00:00.000Z</published>
+    <updated>2021-02-19T08:58:27.836Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;之前在别人的虚拟主机上体验过Typecho博客，现在有了自己的VPS，于是便想试试在自己的VPS上安装Typecho。&lt;/p&gt;
+&lt;p&gt;本文就介绍下如何在自己的 VPS 上搭建 Typecho 博客。&lt;/p&gt;
+&lt;h1 id=&quot;1-准备&quot;&gt;&lt;a href=&quot;#1-准备&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="其它" scheme="https://yaaannn.cn/categories/%E5%85%B6%E5%AE%83/"/>
+    
+    
+    <category term="SSH" scheme="https://yaaannn.cn/tags/SSH/"/>
+    
+    <category term="VS Code" scheme="https://yaaannn.cn/tags/VS-Code/"/>
+    
+    <category term="博客" scheme="https://yaaannn.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="VPS" scheme="https://yaaannn.cn/tags/VPS/"/>
+    
+    <category term="Typecho" scheme="https://yaaannn.cn/tags/Typecho/"/>
+    
+  </entry>
   
   <entry>
     <title>Vim使用手册之插件安装</title>
