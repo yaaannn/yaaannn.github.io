@@ -39,9 +39,9 @@
     <category term="其它" scheme="https://yaaannn.cn/categories/%E5%85%B6%E5%AE%83/"/>
     
     
-    <category term="VS Code" scheme="https://yaaannn.cn/tags/VS-Code/"/>
-    
     <category term="SSH" scheme="https://yaaannn.cn/tags/SSH/"/>
+    
+    <category term="VS Code" scheme="https://yaaannn.cn/tags/VS-Code/"/>
     
     <category term="博客" scheme="https://yaaannn.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
@@ -131,11 +131,11 @@
     <category term="VS Code" scheme="https://yaaannn.cn/categories/VS-Code/"/>
     
     
+    <category term="SSH" scheme="https://yaaannn.cn/tags/SSH/"/>
+    
     <category term="环境搭建" scheme="https://yaaannn.cn/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     <category term="VS Code" scheme="https://yaaannn.cn/tags/VS-Code/"/>
-    
-    <category term="SSH" scheme="https://yaaannn.cn/tags/SSH/"/>
     
   </entry>
   
@@ -160,11 +160,11 @@
     <category term="Flutter" scheme="https://yaaannn.cn/categories/Flutter/"/>
     
     
-    <category term="Flutter" scheme="https://yaaannn.cn/tags/Flutter/"/>
-    
     <category term="环境搭建" scheme="https://yaaannn.cn/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     <category term="VS Code" scheme="https://yaaannn.cn/tags/VS-Code/"/>
+    
+    <category term="Flutter" scheme="https://yaaannn.cn/tags/Flutter/"/>
     
   </entry>
   
